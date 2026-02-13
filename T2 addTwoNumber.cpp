@@ -5,15 +5,15 @@ using namespace std;
 struct ListNode {
     int val;
     ListNode *node;
-    ListNode() : val(0), next(nullptr) {}//ÎŞ²ÎÀàĞÍ
+    ListNode() : val(0), next(nullptr) {}//æ— å‚ç±»å‹
     ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}//ÓĞ²ÎÀàĞÍ
+    ListNode(int x, ListNode *next) : val(x), next(next) {}//æœ‰å‚ç±»å‹
 };
-//¶¨Òå½á¹¹
+//å®šä¹‰ç»“æ„
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* dummy = new ListNode(0);//´´½¨ÑÆ½Úµã ±£Ö¤³õÊ¼½Úµã´¦Àí·½Ê½ÓëºóĞøÒ»ÖÂ
+        ListNode* dummy = new ListNode(0);//åˆ›å»ºå“‘èŠ‚ç‚¹ ä¿è¯åˆå§‹èŠ‚ç‚¹å¤„ç†æ–¹å¼ä¸åç»­ä¸€è‡´
         ListNode* cur = dummy;
         int carry = 0;
 
